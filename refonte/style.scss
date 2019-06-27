@@ -1,0 +1,328 @@
+
+$mobile-width: 1000px;
+
+$margin: 15px;
+
+$skill-bar-height: 8px;
+
+$light-grey: #acadb6;
+$dark-grey: #3b3c41; 
+$dark-blue: #094f88;
+$light-blue: #3391dd;
+$light-orange: #f0b000;
+$white: #eef1f5;  
+
+
+$bg-color: $light-blue;
+$header-bg-color: $white;
+
+$card-bg-color: $white;
+
+$text-light-color: #FFFFFF;
+$text-dark-color: rgba(black, 0.54);
+
+.info-icon {
+    color: $bg-color;
+}
+
+body {
+    background-color: $bg-color;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+#window {
+    
+    #header {
+        color: $text-dark-color;
+
+        padding: 4vh 10vw;
+       // text-align: center;
+        background-color: $header-bg-color;
+
+        h1 {
+            margin: 0;
+        }
+
+        margin-bottom: 20px;
+
+    }
+    
+    .job-title {
+
+        text-align: center;
+        color: $white;
+
+        grid-column-start: 1;
+        grid-column-end: 3;
+       
+        
+        @media only screen and (min-width: $mobile-width) {
+            &.skills {
+                
+    
+                grid-row-start: 1;
+                grid-row-end: 2;
+
+            }
+            &.work, &.education {    
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+
+        }
+    }
+
+    .card {
+
+        background-color: $card-bg-color;
+        color: $text-dark-color;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        padding: 15px;
+        margin: 20px;
+
+        @media only screen and (max-width: $mobile-width) {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        
+        @media only screen and (min-width: $mobile-width) {
+            &.skills {
+                grid-column-start: 2;
+                grid-column-end: 2;
+    
+                grid-row-start: 2;
+                grid-row-end: 4;
+
+            }
+            &.work, &.education {    
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+
+        }
+
+        &.skills {
+            max-height: 800px;
+            overflow-y: scroll;
+        }
+
+        &.skills, &.languages {
+
+            .lang {
+                margin: 40px 20px !important;
+            }
+
+            .skill, .lang {
+                margin: 20px 20px;
+                display: grid;
+                grid-template-columns: 28px 2px;
+                grid-gap: 5px;
+
+                .skill-level-container, .lang-level-container {
+
+                    height: $skill-bar-height;
+
+                    grid-column-start: 1;
+                    grid-column-start: 3;
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+
+                    background-color: $light-grey;
+
+                    .lang-detail {
+                        width: 100%;
+                        text-align: end;
+                    }
+
+                    .skill-level, .lang-level {
+
+                        height: $skill-bar-height;
+                        background-color: $light-blue;
+
+                        &.java {
+                            width: 60%;
+                        }
+
+                        &.vue {
+                            width: 90%;
+                        }
+
+                        &.fr {
+                            width: 100%;
+                        }
+
+                        &.en {
+                            width: 80%;
+                        }
+
+                        &.sp {
+                            width: 35%;
+                        }
+
+                        &.cn {
+                            width: 15%;
+                        }
+                    }
+                }
+
+                .skill-name, .lang-name {
+
+                    margin-left: 10px;
+                    
+                }
+                
+                .skill-logo, .lang-logo {
+                    // width: 28px;
+                    height: 28px;
+                    border-radius: 3px;
+                    background-size: 80% !important;
+                    background-color: #fff;
+                    background-repeat: no-repeat !important;
+                    background-position: center !important;
+                    grid-row-start: 1;
+                    grid-row-end: 3;
+    
+                    border: 1px solid #ebebeb;
+                    box-shadow: 0 3px 6px rgba(0,0,0,.08), 0 3px 6px rgba(0,0,0,.115);
+    
+
+                    &.fr {
+                        background: url("./assets/france.svg");
+                    }
+
+                    &.en {
+                        background: url("./assets/en.svg");
+                    }
+
+                    &.sp {
+                        background: url("./assets/spain.svg");
+                    }
+
+                    &.cn {
+                        background: url("./assets/china.svg");
+                    }
+
+                    &.java {
+                        background: url("./assets/java.svg");
+                    }
+
+                    &.vue {
+                        background: url("./assets/vuejs.svg");
+                    }
+
+                    &.angular {
+                        background: url("./assets/angular.svg");
+                    }
+                    
+                    &.c {
+                        background: url("./assets/c.svg");
+                    }
+
+                    &.cplusplus {
+                        background: url("./assets/cplusplus.svg");
+                    }
+
+                    &.csharp {
+                        background: url("./assets/csharp.svg");
+                    }
+
+                    &.css3 {
+                        background: url("./assets/css3.svg");
+                    }
+
+                    &.express {
+                        background: url("./assets/express.svg");
+                    }
+
+                    &.git {
+                        background: url("./assets/git.svg");
+                    }
+
+                    &.html5 {
+                        background: url("./assets/html5.svg");
+                    }
+
+                    &.less {
+                        background: url("./assets/less.svg");
+                    }
+
+                    &.linux {
+                        background: url("./assets/linux.svg");
+                    }
+
+                    &.mongodb {
+                        background: url("./assets/mongodb.svg");
+                    }
+
+                    &.mysql {
+                        background: url("./assets/mysql.svg");
+                    }
+
+                    &.nodejs {
+                        background: url("./assets/nodejs.svg");
+                    }
+
+                    &.python {
+                        background: url("./assets/python.svg");
+                    }
+
+                    &.sass {
+                        background: url("./assets/sass.svg");
+                    }
+
+                    &.typescript {
+                        background: url("./assets/typescript.svg");
+                    }
+
+                }
+            }
+
+        }
+
+        &.contact {
+
+            .contact-line {
+
+
+                display: flex;
+                align-items: center;
+
+                margin: 0 0 10px $margin;
+            }
+
+            span {
+                margin-left: 10px;
+            }
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        a {
+            color: inherit;
+        }
+
+
+    }
+
+    #main {
+
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+
+        
+        @media only screen and (min-width: $mobile-width) {
+
+            margin: 20px 100px;
+
+        }
+
+        
+
+    }
+}
+

@@ -1,0 +1,157 @@
+.info-icon {
+  color: #3391dd; }
+
+body {
+  background-color: #3391dd;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0; }
+
+#window #header {
+  color: rgba(0, 0, 0, 0.54);
+  padding: 4vh 10vw;
+  background-color: #eef1f5;
+  margin-bottom: 20px; }
+  #window #header h1 {
+    margin: 0; }
+#window .job-title {
+  text-align: center;
+  color: #eef1f5;
+  grid-column-start: 1;
+  grid-column-end: 3; }
+  @media only screen and (min-width: 1000px) {
+    #window .job-title.skills {
+      grid-row-start: 1;
+      grid-row-end: 2; }
+    #window .job-title.work, #window .job-title.education {
+      grid-column-start: 1;
+      grid-column-end: 3; } }
+#window .card {
+  background-color: #eef1f5;
+  color: rgba(0, 0, 0, 0.54);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 15px;
+  margin: 20px; }
+  @media only screen and (max-width: 1000px) {
+    #window .card {
+      grid-column-start: 1;
+      grid-column-end: 3; } }
+  @media only screen and (min-width: 1000px) {
+    #window .card.skills {
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 4; }
+    #window .card.work, #window .card.education {
+      grid-column-start: 1;
+      grid-column-end: 3; } }
+  #window .card.skills {
+    max-height: 800px;
+    overflow-y: scroll; }
+  #window .card.skills .lang, #window .card.languages .lang {
+    margin: 40px 20px !important; }
+  #window .card.skills .skill, #window .card.skills .lang, #window .card.languages .skill, #window .card.languages .lang {
+    margin: 20px 20px;
+    display: grid;
+    grid-template-columns: 28px 2px;
+    grid-gap: 5px; }
+    #window .card.skills .skill .skill-level-container, #window .card.skills .skill .lang-level-container, #window .card.skills .lang .skill-level-container, #window .card.skills .lang .lang-level-container, #window .card.languages .skill .skill-level-container, #window .card.languages .skill .lang-level-container, #window .card.languages .lang .skill-level-container, #window .card.languages .lang .lang-level-container {
+      height: 8px;
+      grid-column-start: 1;
+      grid-column-start: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      background-color: #acadb6; }
+      #window .card.skills .skill .skill-level-container .lang-detail, #window .card.skills .skill .lang-level-container .lang-detail, #window .card.skills .lang .skill-level-container .lang-detail, #window .card.skills .lang .lang-level-container .lang-detail, #window .card.languages .skill .skill-level-container .lang-detail, #window .card.languages .skill .lang-level-container .lang-detail, #window .card.languages .lang .skill-level-container .lang-detail, #window .card.languages .lang .lang-level-container .lang-detail {
+        width: 100%;
+        text-align: end; }
+      #window .card.skills .skill .skill-level-container .skill-level, #window .card.skills .skill .skill-level-container .lang-level, #window .card.skills .skill .lang-level-container .skill-level, #window .card.skills .skill .lang-level-container .lang-level, #window .card.skills .lang .skill-level-container .skill-level, #window .card.skills .lang .skill-level-container .lang-level, #window .card.skills .lang .lang-level-container .skill-level, #window .card.skills .lang .lang-level-container .lang-level, #window .card.languages .skill .skill-level-container .skill-level, #window .card.languages .skill .skill-level-container .lang-level, #window .card.languages .skill .lang-level-container .skill-level, #window .card.languages .skill .lang-level-container .lang-level, #window .card.languages .lang .skill-level-container .skill-level, #window .card.languages .lang .skill-level-container .lang-level, #window .card.languages .lang .lang-level-container .skill-level, #window .card.languages .lang .lang-level-container .lang-level {
+        height: 8px;
+        background-color: #3391dd; }
+        #window .card.skills .skill .skill-level-container .skill-level.java, #window .card.skills .skill .skill-level-container .lang-level.java, #window .card.skills .skill .lang-level-container .skill-level.java, #window .card.skills .skill .lang-level-container .lang-level.java, #window .card.skills .lang .skill-level-container .skill-level.java, #window .card.skills .lang .skill-level-container .lang-level.java, #window .card.skills .lang .lang-level-container .skill-level.java, #window .card.skills .lang .lang-level-container .lang-level.java, #window .card.languages .skill .skill-level-container .skill-level.java, #window .card.languages .skill .skill-level-container .lang-level.java, #window .card.languages .skill .lang-level-container .skill-level.java, #window .card.languages .skill .lang-level-container .lang-level.java, #window .card.languages .lang .skill-level-container .skill-level.java, #window .card.languages .lang .skill-level-container .lang-level.java, #window .card.languages .lang .lang-level-container .skill-level.java, #window .card.languages .lang .lang-level-container .lang-level.java {
+          width: 60%; }
+        #window .card.skills .skill .skill-level-container .skill-level.vue, #window .card.skills .skill .skill-level-container .lang-level.vue, #window .card.skills .skill .lang-level-container .skill-level.vue, #window .card.skills .skill .lang-level-container .lang-level.vue, #window .card.skills .lang .skill-level-container .skill-level.vue, #window .card.skills .lang .skill-level-container .lang-level.vue, #window .card.skills .lang .lang-level-container .skill-level.vue, #window .card.skills .lang .lang-level-container .lang-level.vue, #window .card.languages .skill .skill-level-container .skill-level.vue, #window .card.languages .skill .skill-level-container .lang-level.vue, #window .card.languages .skill .lang-level-container .skill-level.vue, #window .card.languages .skill .lang-level-container .lang-level.vue, #window .card.languages .lang .skill-level-container .skill-level.vue, #window .card.languages .lang .skill-level-container .lang-level.vue, #window .card.languages .lang .lang-level-container .skill-level.vue, #window .card.languages .lang .lang-level-container .lang-level.vue {
+          width: 90%; }
+        #window .card.skills .skill .skill-level-container .skill-level.fr, #window .card.skills .skill .skill-level-container .lang-level.fr, #window .card.skills .skill .lang-level-container .skill-level.fr, #window .card.skills .skill .lang-level-container .lang-level.fr, #window .card.skills .lang .skill-level-container .skill-level.fr, #window .card.skills .lang .skill-level-container .lang-level.fr, #window .card.skills .lang .lang-level-container .skill-level.fr, #window .card.skills .lang .lang-level-container .lang-level.fr, #window .card.languages .skill .skill-level-container .skill-level.fr, #window .card.languages .skill .skill-level-container .lang-level.fr, #window .card.languages .skill .lang-level-container .skill-level.fr, #window .card.languages .skill .lang-level-container .lang-level.fr, #window .card.languages .lang .skill-level-container .skill-level.fr, #window .card.languages .lang .skill-level-container .lang-level.fr, #window .card.languages .lang .lang-level-container .skill-level.fr, #window .card.languages .lang .lang-level-container .lang-level.fr {
+          width: 100%; }
+        #window .card.skills .skill .skill-level-container .skill-level.en, #window .card.skills .skill .skill-level-container .lang-level.en, #window .card.skills .skill .lang-level-container .skill-level.en, #window .card.skills .skill .lang-level-container .lang-level.en, #window .card.skills .lang .skill-level-container .skill-level.en, #window .card.skills .lang .skill-level-container .lang-level.en, #window .card.skills .lang .lang-level-container .skill-level.en, #window .card.skills .lang .lang-level-container .lang-level.en, #window .card.languages .skill .skill-level-container .skill-level.en, #window .card.languages .skill .skill-level-container .lang-level.en, #window .card.languages .skill .lang-level-container .skill-level.en, #window .card.languages .skill .lang-level-container .lang-level.en, #window .card.languages .lang .skill-level-container .skill-level.en, #window .card.languages .lang .skill-level-container .lang-level.en, #window .card.languages .lang .lang-level-container .skill-level.en, #window .card.languages .lang .lang-level-container .lang-level.en {
+          width: 80%; }
+        #window .card.skills .skill .skill-level-container .skill-level.sp, #window .card.skills .skill .skill-level-container .lang-level.sp, #window .card.skills .skill .lang-level-container .skill-level.sp, #window .card.skills .skill .lang-level-container .lang-level.sp, #window .card.skills .lang .skill-level-container .skill-level.sp, #window .card.skills .lang .skill-level-container .lang-level.sp, #window .card.skills .lang .lang-level-container .skill-level.sp, #window .card.skills .lang .lang-level-container .lang-level.sp, #window .card.languages .skill .skill-level-container .skill-level.sp, #window .card.languages .skill .skill-level-container .lang-level.sp, #window .card.languages .skill .lang-level-container .skill-level.sp, #window .card.languages .skill .lang-level-container .lang-level.sp, #window .card.languages .lang .skill-level-container .skill-level.sp, #window .card.languages .lang .skill-level-container .lang-level.sp, #window .card.languages .lang .lang-level-container .skill-level.sp, #window .card.languages .lang .lang-level-container .lang-level.sp {
+          width: 35%; }
+        #window .card.skills .skill .skill-level-container .skill-level.cn, #window .card.skills .skill .skill-level-container .lang-level.cn, #window .card.skills .skill .lang-level-container .skill-level.cn, #window .card.skills .skill .lang-level-container .lang-level.cn, #window .card.skills .lang .skill-level-container .skill-level.cn, #window .card.skills .lang .skill-level-container .lang-level.cn, #window .card.skills .lang .lang-level-container .skill-level.cn, #window .card.skills .lang .lang-level-container .lang-level.cn, #window .card.languages .skill .skill-level-container .skill-level.cn, #window .card.languages .skill .skill-level-container .lang-level.cn, #window .card.languages .skill .lang-level-container .skill-level.cn, #window .card.languages .skill .lang-level-container .lang-level.cn, #window .card.languages .lang .skill-level-container .skill-level.cn, #window .card.languages .lang .skill-level-container .lang-level.cn, #window .card.languages .lang .lang-level-container .skill-level.cn, #window .card.languages .lang .lang-level-container .lang-level.cn {
+          width: 15%; }
+    #window .card.skills .skill .skill-name, #window .card.skills .skill .lang-name, #window .card.skills .lang .skill-name, #window .card.skills .lang .lang-name, #window .card.languages .skill .skill-name, #window .card.languages .skill .lang-name, #window .card.languages .lang .skill-name, #window .card.languages .lang .lang-name {
+      margin-left: 10px; }
+    #window .card.skills .skill .skill-logo, #window .card.skills .skill .lang-logo, #window .card.skills .lang .skill-logo, #window .card.skills .lang .lang-logo, #window .card.languages .skill .skill-logo, #window .card.languages .skill .lang-logo, #window .card.languages .lang .skill-logo, #window .card.languages .lang .lang-logo {
+      height: 28px;
+      border-radius: 3px;
+      background-size: 80% !important;
+      background-color: #fff;
+      background-repeat: no-repeat !important;
+      background-position: center !important;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      border: 1px solid #ebebeb;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.115); }
+      #window .card.skills .skill .skill-logo.fr, #window .card.skills .skill .lang-logo.fr, #window .card.skills .lang .skill-logo.fr, #window .card.skills .lang .lang-logo.fr, #window .card.languages .skill .skill-logo.fr, #window .card.languages .skill .lang-logo.fr, #window .card.languages .lang .skill-logo.fr, #window .card.languages .lang .lang-logo.fr {
+        background: url("./assets/france.svg"); }
+      #window .card.skills .skill .skill-logo.en, #window .card.skills .skill .lang-logo.en, #window .card.skills .lang .skill-logo.en, #window .card.skills .lang .lang-logo.en, #window .card.languages .skill .skill-logo.en, #window .card.languages .skill .lang-logo.en, #window .card.languages .lang .skill-logo.en, #window .card.languages .lang .lang-logo.en {
+        background: url("./assets/en.svg"); }
+      #window .card.skills .skill .skill-logo.sp, #window .card.skills .skill .lang-logo.sp, #window .card.skills .lang .skill-logo.sp, #window .card.skills .lang .lang-logo.sp, #window .card.languages .skill .skill-logo.sp, #window .card.languages .skill .lang-logo.sp, #window .card.languages .lang .skill-logo.sp, #window .card.languages .lang .lang-logo.sp {
+        background: url("./assets/spain.svg"); }
+      #window .card.skills .skill .skill-logo.cn, #window .card.skills .skill .lang-logo.cn, #window .card.skills .lang .skill-logo.cn, #window .card.skills .lang .lang-logo.cn, #window .card.languages .skill .skill-logo.cn, #window .card.languages .skill .lang-logo.cn, #window .card.languages .lang .skill-logo.cn, #window .card.languages .lang .lang-logo.cn {
+        background: url("./assets/china.svg"); }
+      #window .card.skills .skill .skill-logo.java, #window .card.skills .skill .lang-logo.java, #window .card.skills .lang .skill-logo.java, #window .card.skills .lang .lang-logo.java, #window .card.languages .skill .skill-logo.java, #window .card.languages .skill .lang-logo.java, #window .card.languages .lang .skill-logo.java, #window .card.languages .lang .lang-logo.java {
+        background: url("./assets/java.svg"); }
+      #window .card.skills .skill .skill-logo.vue, #window .card.skills .skill .lang-logo.vue, #window .card.skills .lang .skill-logo.vue, #window .card.skills .lang .lang-logo.vue, #window .card.languages .skill .skill-logo.vue, #window .card.languages .skill .lang-logo.vue, #window .card.languages .lang .skill-logo.vue, #window .card.languages .lang .lang-logo.vue {
+        background: url("./assets/vuejs.svg"); }
+      #window .card.skills .skill .skill-logo.angular, #window .card.skills .skill .lang-logo.angular, #window .card.skills .lang .skill-logo.angular, #window .card.skills .lang .lang-logo.angular, #window .card.languages .skill .skill-logo.angular, #window .card.languages .skill .lang-logo.angular, #window .card.languages .lang .skill-logo.angular, #window .card.languages .lang .lang-logo.angular {
+        background: url("./assets/angular.svg"); }
+      #window .card.skills .skill .skill-logo.c, #window .card.skills .skill .lang-logo.c, #window .card.skills .lang .skill-logo.c, #window .card.skills .lang .lang-logo.c, #window .card.languages .skill .skill-logo.c, #window .card.languages .skill .lang-logo.c, #window .card.languages .lang .skill-logo.c, #window .card.languages .lang .lang-logo.c {
+        background: url("./assets/c.svg"); }
+      #window .card.skills .skill .skill-logo.cplusplus, #window .card.skills .skill .lang-logo.cplusplus, #window .card.skills .lang .skill-logo.cplusplus, #window .card.skills .lang .lang-logo.cplusplus, #window .card.languages .skill .skill-logo.cplusplus, #window .card.languages .skill .lang-logo.cplusplus, #window .card.languages .lang .skill-logo.cplusplus, #window .card.languages .lang .lang-logo.cplusplus {
+        background: url("./assets/cplusplus.svg"); }
+      #window .card.skills .skill .skill-logo.csharp, #window .card.skills .skill .lang-logo.csharp, #window .card.skills .lang .skill-logo.csharp, #window .card.skills .lang .lang-logo.csharp, #window .card.languages .skill .skill-logo.csharp, #window .card.languages .skill .lang-logo.csharp, #window .card.languages .lang .skill-logo.csharp, #window .card.languages .lang .lang-logo.csharp {
+        background: url("./assets/csharp.svg"); }
+      #window .card.skills .skill .skill-logo.css3, #window .card.skills .skill .lang-logo.css3, #window .card.skills .lang .skill-logo.css3, #window .card.skills .lang .lang-logo.css3, #window .card.languages .skill .skill-logo.css3, #window .card.languages .skill .lang-logo.css3, #window .card.languages .lang .skill-logo.css3, #window .card.languages .lang .lang-logo.css3 {
+        background: url("./assets/css3.svg"); }
+      #window .card.skills .skill .skill-logo.express, #window .card.skills .skill .lang-logo.express, #window .card.skills .lang .skill-logo.express, #window .card.skills .lang .lang-logo.express, #window .card.languages .skill .skill-logo.express, #window .card.languages .skill .lang-logo.express, #window .card.languages .lang .skill-logo.express, #window .card.languages .lang .lang-logo.express {
+        background: url("./assets/express.svg"); }
+      #window .card.skills .skill .skill-logo.git, #window .card.skills .skill .lang-logo.git, #window .card.skills .lang .skill-logo.git, #window .card.skills .lang .lang-logo.git, #window .card.languages .skill .skill-logo.git, #window .card.languages .skill .lang-logo.git, #window .card.languages .lang .skill-logo.git, #window .card.languages .lang .lang-logo.git {
+        background: url("./assets/git.svg"); }
+      #window .card.skills .skill .skill-logo.html5, #window .card.skills .skill .lang-logo.html5, #window .card.skills .lang .skill-logo.html5, #window .card.skills .lang .lang-logo.html5, #window .card.languages .skill .skill-logo.html5, #window .card.languages .skill .lang-logo.html5, #window .card.languages .lang .skill-logo.html5, #window .card.languages .lang .lang-logo.html5 {
+        background: url("./assets/html5.svg"); }
+      #window .card.skills .skill .skill-logo.less, #window .card.skills .skill .lang-logo.less, #window .card.skills .lang .skill-logo.less, #window .card.skills .lang .lang-logo.less, #window .card.languages .skill .skill-logo.less, #window .card.languages .skill .lang-logo.less, #window .card.languages .lang .skill-logo.less, #window .card.languages .lang .lang-logo.less {
+        background: url("./assets/less.svg"); }
+      #window .card.skills .skill .skill-logo.linux, #window .card.skills .skill .lang-logo.linux, #window .card.skills .lang .skill-logo.linux, #window .card.skills .lang .lang-logo.linux, #window .card.languages .skill .skill-logo.linux, #window .card.languages .skill .lang-logo.linux, #window .card.languages .lang .skill-logo.linux, #window .card.languages .lang .lang-logo.linux {
+        background: url("./assets/linux.svg"); }
+      #window .card.skills .skill .skill-logo.mongodb, #window .card.skills .skill .lang-logo.mongodb, #window .card.skills .lang .skill-logo.mongodb, #window .card.skills .lang .lang-logo.mongodb, #window .card.languages .skill .skill-logo.mongodb, #window .card.languages .skill .lang-logo.mongodb, #window .card.languages .lang .skill-logo.mongodb, #window .card.languages .lang .lang-logo.mongodb {
+        background: url("./assets/mongodb.svg"); }
+      #window .card.skills .skill .skill-logo.mysql, #window .card.skills .skill .lang-logo.mysql, #window .card.skills .lang .skill-logo.mysql, #window .card.skills .lang .lang-logo.mysql, #window .card.languages .skill .skill-logo.mysql, #window .card.languages .skill .lang-logo.mysql, #window .card.languages .lang .skill-logo.mysql, #window .card.languages .lang .lang-logo.mysql {
+        background: url("./assets/mysql.svg"); }
+      #window .card.skills .skill .skill-logo.nodejs, #window .card.skills .skill .lang-logo.nodejs, #window .card.skills .lang .skill-logo.nodejs, #window .card.skills .lang .lang-logo.nodejs, #window .card.languages .skill .skill-logo.nodejs, #window .card.languages .skill .lang-logo.nodejs, #window .card.languages .lang .skill-logo.nodejs, #window .card.languages .lang .lang-logo.nodejs {
+        background: url("./assets/nodejs.svg"); }
+      #window .card.skills .skill .skill-logo.python, #window .card.skills .skill .lang-logo.python, #window .card.skills .lang .skill-logo.python, #window .card.skills .lang .lang-logo.python, #window .card.languages .skill .skill-logo.python, #window .card.languages .skill .lang-logo.python, #window .card.languages .lang .skill-logo.python, #window .card.languages .lang .lang-logo.python {
+        background: url("./assets/python.svg"); }
+      #window .card.skills .skill .skill-logo.sass, #window .card.skills .skill .lang-logo.sass, #window .card.skills .lang .skill-logo.sass, #window .card.skills .lang .lang-logo.sass, #window .card.languages .skill .skill-logo.sass, #window .card.languages .skill .lang-logo.sass, #window .card.languages .lang .skill-logo.sass, #window .card.languages .lang .lang-logo.sass {
+        background: url("./assets/sass.svg"); }
+      #window .card.skills .skill .skill-logo.typescript, #window .card.skills .skill .lang-logo.typescript, #window .card.skills .lang .skill-logo.typescript, #window .card.skills .lang .lang-logo.typescript, #window .card.languages .skill .skill-logo.typescript, #window .card.languages .skill .lang-logo.typescript, #window .card.languages .lang .skill-logo.typescript, #window .card.languages .lang .lang-logo.typescript {
+        background: url("./assets/typescript.svg"); }
+  #window .card.contact .contact-line {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 15px; }
+  #window .card.contact span {
+    margin-left: 10px; }
+  #window .card h3 {
+    text-align: center; }
+  #window .card a {
+    color: inherit; }
+#window #main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px; }
+  @media only screen and (min-width: 1000px) {
+    #window #main {
+      margin: 20px 100px; } }
+
+/*# sourceMappingURL=style.css.map */
