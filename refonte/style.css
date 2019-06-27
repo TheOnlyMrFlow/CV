@@ -13,6 +13,9 @@ body {
   margin-bottom: 20px; }
   #window #header h1 {
     margin: 0; }
+    @media only screen and (max-width: 1000px) {
+      #window #header h1 {
+        text-align: center; } }
 #window .job-title {
   text-align: center;
   color: #eef1f5;
@@ -139,9 +142,12 @@ body {
   #window .card.contact .contact-line {
     display: flex;
     align-items: center;
-    margin: 0 0 10px 15px; }
+    justify-content: center;
+    margin: 20px 0 0px 0; }
   #window .card.contact span {
     margin-left: 10px; }
+  #window .card.hobbies p {
+    text-align: center; }
   #window .card h3 {
     text-align: center; }
   #window .card a {
@@ -152,6 +158,6 @@ body {
   grid-gap: 10px; }
   @media only screen and (min-width: 1000px) {
     #window #main {
-      margin: 20px 100px; } }
+      margin: 20px calc(25vw - 200px); } }
 
 /*# sourceMappingURL=style.css.map */
