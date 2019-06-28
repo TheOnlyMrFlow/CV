@@ -186,12 +186,81 @@ body {
                         background-color: $light-blue;
 
                         &.java {
-                            width: 60%;
+                            width: 70%;
+                        }
+
+                        &.c {
+                            width: 50%;
+                        }
+
+                        &.cplusplus {
+                            width: 40%;
+                        }
+
+                        &.csharp {
+                            width: 50%;
+                        }
+
+                        &.python {
+                            width: 35%;
+                        }
+
+                        &.unity {
+                            width: 50%;
+                        }
+
+                        &.nodejs {
+                            width: 65%;
+                        }
+
+                        &.express {
+                            width: 65%;
                         }
 
                         &.vue {
-                            width: 90%;
+                            width: 55%;
                         }
+
+                        &.angular {
+                            width: 50%;
+                        }
+
+                        &.typescript {
+                            width: 65%;
+                        }
+
+                        &.html5 {
+                            width: 75%; 
+                        }
+
+                        &.css3 {
+                            width: 75%; 
+                        }
+
+                        &.sass {
+                            width: 65%; 
+                        }
+
+                        &.less {
+                            width: 50%; 
+                        }
+
+                        &.mysql {
+                            width: 55%; 
+                        }
+
+                        &.mongodb {
+                            width: 40%; 
+                        }
+
+                        &.git {
+                            width: 60%; 
+                        }
+
+                        &.linux {
+                            width: 50%; 
+                        }
+
 
                         &.fr {
                             width: 100%;
@@ -318,6 +387,10 @@ body {
 
                     &.typescript {
                         background: url("./assets/typescript.svg");
+                    }
+
+                    &.unity {
+                        background: url("./assets/unity.svg");
                     }
 
                 }
