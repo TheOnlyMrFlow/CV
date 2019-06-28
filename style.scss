@@ -21,6 +21,9 @@ $card-bg-color: $white;
 $text-light-color: #FFFFFF;
 $text-dark-color: rgba(black, 0.54);
 
+$avatar-size-desk: 120px;
+$avatar-size-mob: 60px;
+
 .info-icon {
     color: $bg-color;
 }
@@ -53,6 +56,8 @@ body {
     #header {
         color: $text-dark-color;
 
+      
+
         padding: 4vh 10vw;
        // text-align: center;
         background-color: $header-bg-color;
@@ -62,6 +67,26 @@ body {
                 text-align: center;
             }
             margin: 0;
+        }
+
+        .avatar {
+
+            position: absolute;
+            right: 10vw;
+            top: 5vh;
+
+            width: $avatar-size-desk;
+            
+            border-radius: 50%;
+            border-style: solid;
+            border-color: $light-grey;
+
+            @media screen and (max-width: $mobile-width) {
+                width: $avatar-size-mob;
+                left: calc(100vw/2 - 32px);
+                top: 9vh;
+            }
+           
         }
 
         margin-bottom: 20px;
@@ -327,6 +352,7 @@ body {
 
         h3 {
             text-align: center;
+            text-transform: uppercase;
         }
 
         a {
@@ -337,6 +363,18 @@ body {
     }
 
     #main {
+
+        h2 {
+            text-transform: uppercase;
+
+            font-size: 1.5rem;
+            
+            @media only screen and (min-width: $mobile-width) {
+                font-size: 1.9rem;
+
+            }
+
+        }
 
         
         display: grid;

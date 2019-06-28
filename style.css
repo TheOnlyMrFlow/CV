@@ -26,6 +26,19 @@ body {
     @media only screen and (max-width: 1000px) {
       #window #header h1 {
         text-align: center; } }
+  #window #header .avatar {
+    position: absolute;
+    right: 10vw;
+    top: 5vh;
+    width: 120px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #acadb6; }
+    @media screen and (max-width: 1000px) {
+      #window #header .avatar {
+        width: 60px;
+        left: calc(100vw/2 - 32px);
+        top: 9vh; } }
 #window .job-title {
   text-align: center;
   color: #eef1f5;
@@ -159,13 +172,20 @@ body {
   #window .card.hobbies p {
     text-align: center; }
   #window .card h3 {
-    text-align: center; }
+    text-align: center;
+    text-transform: uppercase; }
   #window .card a {
     color: inherit; }
 #window #main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px; }
+  #window #main h2 {
+    text-transform: uppercase;
+    font-size: 1.5rem; }
+    @media only screen and (min-width: 1000px) {
+      #window #main h2 {
+        font-size: 1.9rem; } }
   @media only screen and (min-width: 1000px) {
     #window #main {
       margin: 20px calc(25vw - 200px); } }
