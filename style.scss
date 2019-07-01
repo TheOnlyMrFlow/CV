@@ -148,7 +148,10 @@ body {
         }
 
         &.skills {
-            // max-height: 800px;
+
+            @media only screen and (min-width: $mobile-width) {
+                max-height: 800px;
+            }
             overflow-y: scroll;
         }
 

@@ -72,6 +72,9 @@ body {
       grid-column-end: 3; } }
   #window .card.skills {
     overflow-y: scroll; }
+    @media only screen and (min-width: 1000px) {
+      #window .card.skills {
+        max-height: 800px; } }
   #window .card.skills .lang, #window .card.languages .lang {
     margin: 40px 20px !important; }
   #window .card.skills .skill, #window .card.skills .lang, #window .card.languages .skill, #window .card.languages .lang {
