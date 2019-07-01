@@ -71,7 +71,6 @@ body {
       grid-column-start: 1;
       grid-column-end: 3; } }
   #window .card.skills {
-    max-height: 800px;
     overflow-y: scroll; }
   #window .card.skills .lang, #window .card.languages .lang {
     margin: 40px 20px !important; }
