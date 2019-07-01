@@ -449,6 +449,8 @@ body {
 
         }
 
+       
+
         
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -464,5 +466,14 @@ body {
         
 
     }
+    
+    .print {
+        //width: 100%;
+        margin: auto;
+        text-align: center;
+        color: white;
+        margin-bottom: 20px;
+    }
 }
+
 
